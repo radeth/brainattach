@@ -1,0 +1,234 @@
+@import url('reset.css');
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h1{
+    font-size: 3.3rem;
+    margin: 2rem;
+}
+
+section{
+    min-height: 100vh;
+    }
+nav{
+    z-index: 4;
+    margin-bottom: -7vh;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background:linear-gradient(to top, transparent, gray);
+    display: flex;
+a{
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: black;
+    margin: 3vh;
+    border-bottom: 3px solid #00A06A;
+    }a:hover{
+        font-size: 3.7rem;
+        border-bottom: 5px solid #00A06A;
+    }
+}
+#burgerMenu{
+    background: url(img/menu-128.png);
+    height: 128px;
+    width: 128px;
+    display: none;
+}
+#logo{
+        margin: 3vh;
+        background: url(img/logo5.png) right no-repeat;
+        height: 109px;
+        width: 181px; 
+        flex-grow: 3;
+        align-self:center;
+}
+#top{
+        background:linear-gradient(to left, transparent, white 70%),url(img/opaska1.jpg)  top right no-repeat ;
+    }
+#toTop:hover{
+        opacity: 0.9;
+}
+#toTop{
+    background-color: #00A06A;
+    height: 10vh;
+    width: 10vh;
+    font-size: 5rem;
+    opacity: 0.3;
+    z-index: 10;
+    position: fixed;
+    border: 1px solid #e0dcdc;
+    border-radius: 8px;
+    bottom: 5vh;
+    right: 5vh;
+    text-align: center;
+    a{
+        color: #562B45;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+    }
+}
+
+#holderTwo{
+    background:linear-gradient(to right, transparent, white 85%),
+  url(img/opaska2.jpg)  top left no-repeat ;
+    }
+
+#holderThree{
+    background:linear-gradient(to left, transparent, white 85%),
+  url(img/pudelko.jpg)  top right no-repeat ;
+}
+#holderfour{
+    background:linear-gradient(transparent, black);
+}
+
+.container{
+    display: flex;
+}
+#flexEnd{
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+    
+.content{
+    letter-spacing: 0.15rem;
+    font-size: 1.8em;
+    line-height: 2rem
+}
+#btContent{
+        width: 65vh;
+        margin: 10vh;
+    }
+#algContent{
+        width: 65vh;
+        margin: 10vh;
+        margin-right: 15vh;
+        align-self: flex-end;
+}
+#videoOne{
+    align-self: center;
+}
+#deviceContent{
+        width: 65vh;
+        margin: 10vh;
+}
+form{
+     margin: 3rem auto;
+    font-family: sans-serif;
+    input:nth-of-type(1){
+        border-radius: 0.2rem;
+        font-family: sans-serif;
+        padding: 0.8rem;
+        border: 1px solid #aaa;
+        color: #666;
+        margin-bottom: 1rem;
+        min-width: 189px;
+
+    }
+    #mess{
+        border-radius: 0.2rem;
+        font-family: sans-serif;
+        padding: 0.8rem;
+        border: 1px solid #aaa;
+        width: 60vh;
+        height: 30vh;
+        color: #666;
+    }
+}
+#formContent{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40vh;
+    height: 70vh;
+    width: 70vh;
+}
+
+#result{
+    opacity: 0;
+    padding: 0.4rem;
+    display: inline-block;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    text-align: center;
+}
+#buttonDiv{
+    position: absolute;
+    top: 60%;
+    left: 23%;
+}
+@media only screen and (max-width:1024px){
+    #toTop{
+        text-align: center;
+        font-size: 15rem;
+        height: 20vh;
+        width: 20vh;
+    }
+    #videoOne{
+        visibility: hidden;
+    }
+    #top{
+        background: linear-gradient(to bottom, white,transparent 120%),url(img/opaska1mobile.jpg) center  no-repeat ;
+        height: 200vh;
+        width: 100vh;
+    }
+    
+    #holderTwo{
+    background:linear-gradient(to bottom, white, transparent 120%),
+  url(img/opaska2mobile.jpg)  center no-repeat ;
+        height: 200vh;
+        width: 100vh;
+    }
+
+    #holderThree{
+    background:linear-gradient(to bottom, white,transparent 85%),
+  url(img/pudelko.jpg)  center no-repeat ;
+        height: 200vh;
+        width: 100vh;
+        
+}
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    #flexEnd{
+    justify-content: flex-start;
+    flex-direction: column;
+}
+    #btContent{
+        width: 65vh;
+        margin: 10vh;
+    }
+    #algContent{
+            width: 65vh;
+            margin: 10vh;
+            margin-left: 15vh;
+    }
+    #videoOne{
+        align-self: center;
+    }
+    #deviceContent{
+            width: 65vh;
+            margin: 10vh;
+    }
+    #formContent{
+        margin: 0 auto;
+    }
+    
+    nav{
+        position: static;
+        align-items: center;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-width: 100vh;
+    }
+    #burgerMenu{
+        z-index: 4;
+        display: block;
+    }
+}
