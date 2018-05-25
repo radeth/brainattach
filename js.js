@@ -1,6 +1,6 @@
 'use strict';
 $(document).ready(function(){
-    
+    $('nav').slideToggle(1000);
     console.log('test')
     loadAnimation();
     burgerMenu();
@@ -16,6 +16,7 @@ function loadAnimation(){
 })}
 
 function burgerMenu(){
+        
         $('#burgerMenu').on('click',function(){
         $('nav').slideToggle(1000);
     })

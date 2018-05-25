@@ -68,21 +68,17 @@ nav {
   line-height: 2rem; }
 
 #btContent {
-  width: 65vh;
-  margin: 10vh; }
+  width: 65vh; }
 
 #algContent {
   width: 65vh;
-  margin: 10vh;
-  margin-right: 15vh;
   align-self: flex-end; }
 
 #videoOne {
   align-self: center; }
 
 #deviceContent {
-  width: 65vh;
-  margin: 10vh; }
+  width: 65vh; }
 
 @media only screen and (max-width: 1024px) {
   #videoOne {
@@ -103,26 +99,26 @@ nav {
     min-height: 200vh;
     min-width: 100vh; }
 
-  #flexEnd {
-    justify-content: flex-end;
-    flex-direction: column; }
-
   .content {
     letter-spacing: 0.15rem;
     font-size: 1.8em;
     line-height: 2rem; }
 
+  #flexEnd {
+    display: flex; }
+
   #btContent {
-    width: 100%; }
+    width: 90%;
+    padding: 5%; }
 
   #algContent {
-    width: 100%; }
-
-  #videoOne {
-    align-self: center; }
+    align-self: center;
+    width: 90%;
+    padding: 5%; }
 
   #deviceContent {
-    width: 100%; }
+    width: 90%;
+    padding: 5%; }
 
   nav {
     position: static;
