@@ -13,12 +13,13 @@ section {
 nav {
   z-index: 4;
   margin-bottom: -7vh;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100%;
   overflow: hidden;
   background: linear-gradient(to top, transparent, gray);
   display: flex; }
   nav a {
+    height: 30%;
     font-size: 3.5rem;
     text-decoration: none;
     color: black;
@@ -105,79 +106,34 @@ nav {
   width: 65vh;
   margin: 10vh; }
 
-form {
-  margin: 3rem auto;
-  font-family: sans-serif; }
-  form input:nth-of-type(1) {
-    border-radius: 0.2rem;
-    font-family: sans-serif;
-    padding: 0.8rem;
-    border: 1px solid #aaa;
-    color: #666;
-    margin-bottom: 1rem;
-    min-width: 189px; }
-  form #mess {
-    border-radius: 0.2rem;
-    font-family: sans-serif;
-    padding: 0.8rem;
-    border: 1px solid #aaa;
-    width: 60vh;
-    height: 30vh;
-    color: #666; }
-
-#formContent {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 40vh;
-  height: 70vh;
-  width: 70vh; }
-
-#result {
-  opacity: 0;
-  padding: 0.4rem;
-  display: inline-block;
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  text-align: center; }
-
-#buttonDiv {
-  position: absolute;
-  top: 60%;
-  left: 23%; }
-
 @media only screen and (max-width: 1024px) {
-  #toTop {
-    text-align: center;
-    font-size: 15rem;
-    height: 20vh;
-    width: 20vh; }
+  .container {
+    width: 100%; }
 
   #videoOne {
     visibility: hidden; }
 
   #top {
-    background: linear-gradient(to bottom, white, transparent 120%), url(img/opaska1mobile.jpg) center no-repeat;
-    height: 200vh;
-    width: 100vh; }
+    background: linear-gradient(to bottom, white, transparent 120%), url(img/opaska1mobile.jpg) bottom no-repeat;
+    min-height: 200vh;
+    min-width: 100vh; }
 
   #holderTwo {
-    background: linear-gradient(to bottom, white, transparent 120%), url(img/opaska2mobile.jpg) center no-repeat;
-    height: 200vh;
-    width: 100vh; }
+    background: linear-gradient(to bottom, white, transparent 120%), url(img/opaska2mobile.jpg) bottom no-repeat;
+    min-height: 200vh;
+    min-width: 100vh; }
 
   #holderThree {
-    background: linear-gradient(to bottom, white, transparent 85%), url(img/pudelko.jpg) center no-repeat;
-    height: 200vh;
-    width: 100vh; }
+    background: linear-gradient(to bottom, white, transparent 85%), url(img/pudelko.jpg) bottom no-repeat;
+    min-height: 200vh;
+    min-width: 100vh; }
 
   .container {
     display: flex;
     justify-content: center; }
 
   #flexEnd {
-    justify-content: flex-start;
-    flex-direction: column; }
+    justify-content: center; }
 
   #btContent {
     width: 65vh;
@@ -186,7 +142,8 @@ form {
   #algContent {
     width: 65vh;
     margin: 10vh;
-    margin-left: 15vh; }
+    margin-left: 15vh;
+    align-content: flex-start; }
 
   #videoOne {
     align-self: center; }
