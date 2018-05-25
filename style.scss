@@ -64,6 +64,7 @@ a{
 
 .container{
     display: flex;
+    flex-wrap: wrap
 }
 #flexEnd{
     justify-content: flex-end;
@@ -72,14 +73,17 @@ a{
 
     
 .content{
+    margin: 5vh;
     letter-spacing: 0.15rem;
     font-size: 1.8em;
     line-height: 2rem
 }
 #btContent{
+    margin: 10vh;
         width: 65vh;
     }
 #algContent{
+    margin: 5vh;
         width: 65vh;
         align-self: flex-end;
 }
@@ -87,7 +91,11 @@ a{
     align-self: center;
 }
 #deviceContent{
+    margin: 5vh;
         width: 65vh;
+}
+.member{
+    border-bottom: 1px solid #00A06A;
 }
 @media only screen and (max-width:1024px){
     #videoOne{
@@ -114,6 +122,7 @@ a{
         
 }
     .content{
+    margin: 3vh;
     letter-spacing: 0.15rem;
     font-size: 1.8em;
     line-height: 2rem
