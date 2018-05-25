@@ -46,28 +46,6 @@ nav {
 #top {
   background: linear-gradient(to left, transparent, white 70%), url(img/opaska1.jpg) top right no-repeat; }
 
-#toTop:hover {
-  opacity: 0.9; }
-
-#toTop {
-  background-color: #00A06A;
-  height: 10vh;
-  width: 10vh;
-  font-size: 5rem;
-  opacity: 0.3;
-  z-index: 10;
-  position: fixed;
-  border: 1px solid #e0dcdc;
-  border-radius: 8px;
-  bottom: 5vh;
-  right: 5vh;
-  text-align: center; }
-  #toTop a {
-    color: #562B45;
-    text-decoration: none;
-    display: block;
-    padding: 15px; }
-
 #holderTwo {
   background: linear-gradient(to right, transparent, white 85%), url(img/opaska2.jpg) top left no-repeat; }
 
@@ -107,9 +85,6 @@ nav {
   margin: 10vh; }
 
 @media only screen and (max-width: 1024px) {
-  .container {
-    width: 100%; }
-
   #videoOne {
     visibility: hidden; }
 
@@ -128,32 +103,26 @@ nav {
     min-height: 200vh;
     min-width: 100vh; }
 
-  .container {
-    display: flex;
-    justify-content: center; }
-
   #flexEnd {
-    justify-content: center; }
+    justify-content: flex-end;
+    flex-direction: column; }
+
+  .content {
+    letter-spacing: 0.15rem;
+    font-size: 1.8em;
+    line-height: 2rem; }
 
   #btContent {
-    width: 65vh;
-    margin: 10vh; }
+    width: 100%; }
 
   #algContent {
-    width: 65vh;
-    margin: 10vh;
-    margin-left: 15vh;
-    align-content: flex-start; }
+    width: 100%; }
 
   #videoOne {
     align-self: center; }
 
   #deviceContent {
-    width: 65vh;
-    margin: 10vh; }
-
-  #formContent {
-    margin: 0 auto; }
+    width: 100%; }
 
   nav {
     position: static;
